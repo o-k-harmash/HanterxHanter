@@ -1,0 +1,57 @@
+.edit {
+  margin-top: 62px;
+  min-height: calc(100vh - 62px);
+  background-color: #f5f5f5;
+}
+
+.edit form > .c-card {
+  margin-bottom: 1.25rem;
+}
+
+.edit__container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+  padding: 15px;
+}
+
+.media-group {
+  display: flex;
+  min-height: 380px;
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.media-group__left-column {
+  flex: 2 1 auto;
+}
+
+.media-group__right-column {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  gap: 1.25rem;
+}
+
+.edit__choose {
+  height: 444px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+}
+
+.edit__choose.edit__choose_hidden {
+  display: none;
+}
+
+.blur {
+  position: absolute; /* Зафиксированная позиция относительно окна */
+  top: 0;
+  left: 0;
+  width: 100%; /* Ширина на весь экран */
+  min-height: 100vh; /* Высота на весь экран */
+  background-color: rgba(0, 0, 0, 0.4); /* Затемнение фона с прозрачностью */
+  z-index: 9; /* Высокий z-index, чтобы фон был на переднем плане */
+}

@@ -1,0 +1,29 @@
+/*
+    Tag + tag icon like: TagIcon, Tag
+  */
+
+.tag {
+  background-color: rgba(0, 0, 0, 0.03);
+  margin-right: 8px;
+  margin-bottom: 8px;
+  border: 1px solid #e6e6e6;
+  border-radius: 18px;
+  padding: 4px 10px;
+  font-size: 12px;
+}
+
+.tag span {
+  color: #232954;
+  font-weight: 500;
+  cursor: default;
+}
+
+.tag.tag_icon {
+  gap: 5px;
+}
+
+.tag.tag_icon svg {
+  width: 16px;
+  height: 16px;
+  stroke: #a19fa8;
+}

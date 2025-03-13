@@ -1,0 +1,96 @@
+.selection-input {
+  width: 100%;
+}
+
+/* 
+  .selection-input__label:
+  Styles for the individual label element in the selection input. 
+  It ensures labels are flex containers with proper alignment and padding, 
+  and sets up the basic visual layout and interaction.
+*/
+.selection-input__label {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 80, 162, 0.1);
+}
+
+/* 
+  .selection-input__label.selection-input__label_checked:
+  This style is applied when a label is selected. 
+  It highlights the label with a border and a soft background color.
+*/
+.selection-input__label.selection-input__label_checked {
+  border: 1px solid #ff50a2; /* Border color for selected label */
+  background-color: rgba(
+    255,
+    80,
+    162,
+    0.1
+  ); /* Light background for selection */
+}
+
+/* 
+  .selection-input input:
+  Hides the default radio/checkbox input element to create a custom styled version 
+  using the label and span for interaction.
+*/
+.selection-input__label input {
+  display: none;
+}
+
+/* 
+  .selection-input__title:
+  Style for the text inside the label that represents the selectable option. 
+  It defines the font size, weight, and color.
+*/
+.selection-input__title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #69708a; /* Gray color for the option text */
+}
+
+/* 
+  .selection-input__check:
+  Creates a circular visual element that mimics a checkbox or radio button. 
+  It's used to indicate the selection state.
+*/
+.selection-input__check {
+  position: relative;
+  width: 20px; /* Size of the circle */
+  height: 20px;
+  border-radius: 50%; /* Circular shape */
+  border: 1px solid rgba(255, 80, 162, 0.1); /* Light border color */
+}
+
+/* 
+  .selection-input__label.selection-input__label_checked .selection-input__check:
+  Applies when the label is selected. The border color changes to match the selected theme.
+*/
+.selection-input__label.selection-input__label_checked .selection-input__check {
+  border-color: #ff50a2; /* Border color for the selected state */
+}
+
+/* 
+  .selection-input__label.selection-input__label_checked .selection-input__check::after:
+  Creates the inner visual state of the checkbox when selected, 
+  placing a small circle in the center of the larger circle.
+*/
+.selection-input__label.selection-input__label_checked
+  .selection-input__check::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px; /* Size of the inner circle */
+  height: 12px;
+  z-index: 2;
+  border-radius: 50%; /* Circular shape for the inner dot */
+  background-color: #ff50a2; /* Fill color for the inner circle */
+  transform: translate(-50%, -50%); /* Center the circle inside */
+}

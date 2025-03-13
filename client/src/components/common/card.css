@@ -1,0 +1,88 @@
+/* ==============================
+   Card General Styles
+   ============================== */
+.c-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  border: 1px solid #e6e6e6;
+  background-color: #fff;
+  margin-top: .25rem;
+  margin-bottom: 1.25rem;
+}
+
+.c-card.c-card_clickbait:hover {
+  cursor: pointer;
+}
+
+.c-card__header {
+  padding: 12px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.c-card__title {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.c-card__boby {
+  flex: 1;
+  scrollbar-color: transparent transparent;
+  overflow-y: auto; /* Скроллинг только здесь */
+  color: #697089;
+  padding: 15px 12px;
+}
+
+/* ==============================
+     Card Close Button Styles
+     ============================== */
+.c-card .c-card__close {
+  display: none; /* By default, hide the close button */
+}
+
+/* ==============================
+     Card Shared Type Styles (c-card_shared)
+     ============================== */
+.c-card.c-card_shared {
+  border: none;
+  border-bottom-left-radius: 0px; /* Removes the bottom-left radius for shared cards */
+  border-bottom-right-radius: 0px; /* Removes the bottom-right radius for shared cards */
+}
+
+/* ==============================
+     Card Header Styles for Shared Card Type
+     ============================== */
+.c-card.c-card_shared .c-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Align the title and close button on opposite sides */
+}
+
+/* ==============================
+     Card Title Styles for Shared Card Type
+     ============================== */
+.c-card.c-card_shared .c-card__title {
+  font-size: 16px; /* Larger title size for shared cards */
+}
+
+/* ==============================
+     Card Close Button Styles for Shared Card Type
+     ============================== */
+.c-card.c-card_shared .c-card__close {
+  width: 24px;
+  height: 24px;
+  display: block; /* Make the close button visible */
+}
+
+.c-card.c-card_shared .c-card__close:hover {
+  cursor: pointer; /* Change cursor to pointer when hovering over the close button */
+}
+
+/* ==============================
+     Card Close Button SVG Styles
+     ============================== */
+.c-card.c-card_shared .c-card__close svg {
+  stroke: #232954; /* Set color for the close button icon */
+}

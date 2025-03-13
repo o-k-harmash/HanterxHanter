@@ -1,0 +1,51 @@
+/*
+    Navigation
+  */
+
+.navbar {
+  width: 100%;
+  top: 0;
+  background-color: #fff;
+  min-height: 62px;
+  z-index: 10;
+  display: flex;
+}
+
+.navbar .medium-container {
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.navbar.navbar_outlined {
+  box-shadow: 0px 2px 8px 0px rgba(99, 99, 99, 0.2);
+}
+
+.navbar__logo {
+  will-change: filter;
+  transition: filter 300ms;
+}
+.navbar__logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.navbar .navbar__link {
+  padding: 8px 8px 8px;;
+  margin: 0 auto;
+}

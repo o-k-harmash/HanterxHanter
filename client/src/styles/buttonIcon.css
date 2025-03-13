@@ -1,0 +1,86 @@
+/*
+    Action buttons like: DislikeIconButton, LikeIconButton
+  */
+.icon-button {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.icon-button svg {
+  width: 24px;
+  height: 24px;
+}
+
+.icon-button:hover {
+  cursor: pointer; /* Курсор становится рукой */
+}
+
+.icon-button.icon-button_style-1 {
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.icon-button.icon-button_style-1:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Немного увеличиваем тень при наведении */
+}
+
+.icon-button.icon-button_style-1:active {
+  transform: scale(0.9); /* Эффект нажатия - уменьшение размера */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Уменьшаем тень при нажатии */
+}
+
+.icon-button.icon-button_style-2 {
+  width: 30px;
+  height: 30px;
+  padding: 4px;
+  border: 2px dashed #e6e6e6;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.icon-button.icon-button_style-2 svg {
+  width: 14px;
+  height: 14px;
+  fill: #697089;
+}
+
+.icon-button.icon-button_style-3 {
+  background-color: rgba(255, 80, 162, 0.1);
+}
+
+.icon-button.icon-button.icon-button_style-4 {
+  height: 46px;
+  width: 46px;
+  border-radius: 50%;
+  z-index: 1;
+  position: relative;
+}
+
+.icon-button.icon-button.icon-button_style-4 svg {
+  stroke: #ff3d97;
+  fill: #ff3d97;
+}
+
+.icon-button.icon-button.icon-button_style-4.active svg {
+  stroke: #fff;
+  fill: #fff;
+}
+
+.icon-button.icon-button.icon-button_style-4.active::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(180deg, #fe77b6 0%, #ff3d97 100%);
+  box-shadow: 0px 15px 30px 0px rgba(255, 104, 175, 0.3);
+}
