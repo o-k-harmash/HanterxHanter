@@ -1,0 +1,23 @@
+.menu {
+  --var-blur-index: 999;
+  --var-menu-index: -999;
+}
+
+.menu__blur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: var(--var-blur-index);
+  backdrop-filter: blur(10px);
+}
+
+.menu__child {
+  height: 444px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: calc(var(--var-blur-index) + 1);
+}

@@ -1,0 +1,64 @@
+/* Общие стили для форм */
+.form-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form__content {
+  max-width: 420px;
+  padding: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 14px;
+  box-shadow: 0px 6px 12px 0px rgba(99, 99, 99, 0.2);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form__input {
+  border: 1px solid #e6e6e6;
+  color: #232954;
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+.form__remember {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.form__remember input {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.form__lb-checkbox {
+  margin: 0;
+}
+
+.form__content p {
+  margin-top: 16px;
+  text-align: right;
+}
+
+.form__content h4 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.form__content .btn {
+  margin-top: 20px;
+  width: 141px;
+  align-self: center;
+}

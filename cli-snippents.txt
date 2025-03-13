@@ -1,0 +1,8 @@
+///Create migration for moduled project example
+dotnet ef migrations add InitialMigration --startup-project .\HanterxHanterApp\HanterxHanterApp.csproj --project .\DataLayer\DataLayer.csproj --output-dir Migrations
+
+///Apply migration for moduled project example
+dotnet ef database update --startup-project .\HanterxHanterApp\HanterxHanterApp.csproj --project .\DataLayer\DataLayer.csproj
+
+///up database and pg admin
+docker compose up

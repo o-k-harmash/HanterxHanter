@@ -1,0 +1,10 @@
+version: '3.0'
+
+services:
+  ui:
+    image: me/hxh-react-client:runtime
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - "80:80"
